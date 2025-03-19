@@ -36,7 +36,7 @@ class Openapi(QAxWidget):
         # 몇번 반복 실행 할지 설정
         ohlcv_cnt = self._get_repeat_cnt(trcode, rqname)
 
-        # 하나의 row씩 append
+        # 하나의 row씩 app
         for i in range(ohlcv_cnt):
             date = self._get_comm_data(trcode, rqname, i, "일자")
             open = self._get_comm_data(trcode, rqname, i, "시가")
